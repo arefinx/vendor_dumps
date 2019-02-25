@@ -181,8 +181,6 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
-# Security patch level
-VENDOR_SECURITY_PATCH := 2022-09-01
 
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe

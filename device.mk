@@ -388,6 +388,9 @@ PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/qcom-caf/wlan
 
+# Setting vendor SPL
+VENDOR_SECURITY_PATCH = $(PLATFORM_SECURITY_PATCH)
+
 # Telephony
 PRODUCT_PACKAGES += \
     extphonelib \
