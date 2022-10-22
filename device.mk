@@ -310,6 +310,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     MojitoCarrierConfig \
     MojitoFrameworks \
+    MojitoMaintainer \
     MojitoSettingsProvider \
     MojitoSettings \
     MojitoSystemUI \
