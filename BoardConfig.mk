@@ -181,11 +181,13 @@ ENABLE_VENDOR_RIL_SERVICE := true
 # Releasetools
 TARGET_RELEASETOOLS_EXTENSIONS := $(DEVICE_PATH)
 
-
 # Sepolicy
 TARGET_SEPOLICY_DIR := msmsteppe
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor/xiaomi
+BOARD_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor/qcom
+SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 include device/qcom/sepolicy_vndr/SEPolicy.mk
-include device/xiaomi/mojito-sepolicy/mojito-sepolicy.mk
 
 # Verified Boot
 BOARD_AVB_ENABLE := true
