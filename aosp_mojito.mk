@@ -17,13 +17,14 @@ $(call inherit-product, device/xiaomi/mojito/device.mk)
 # Inherit some common ProtonPlus stuff
 $(call inherit-product, vendor/proton/config/common.mk)
 PROTON_BUILD_VARIANT := OFFICIAL
+WITH_GAPPS := true
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := mojito
+PRODUCT_NAME := aosp_mojito
 PRODUCT_DEVICE := mojito
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi Note 10
